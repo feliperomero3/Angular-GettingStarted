@@ -7,10 +7,10 @@ import { IProduct } from './product';
     styleUrls: ['./product-list.component.css']
 })
 export class ProductListComponent implements OnInit {
-    pageTitle: string = 'Product List';
-    imageWidth: number = 50;
-    imageMargin: number = 2;
-    showImage: boolean = false;
+    pageTitle = 'Product List';
+    imageWidth = 50;
+    imageMargin = 2;
+    showImage = false;
     private _listFilter: string;
 
     get listFilter(): string {
@@ -32,7 +32,7 @@ export class ProductListComponent implements OnInit {
             'description': '15 gallon capacity rolling garden cart',
             'price': 32.99,
             'starRating': 4.2,
-            'imageUrl': 'https://openclipart.org/image/300px/svg_to_png/58471/garden_cart.png' 
+            'imageUrl': 'https://openclipart.org/image/300px/svg_to_png/58471/garden_cart.png'
         },
         {
             'productId': 5,
@@ -42,7 +42,7 @@ export class ProductListComponent implements OnInit {
             'description': 'Curved claw steel hammer',
             'price': 8.9,
             'starRating': 4.8,
-            'imageUrl': 'https://openclipart.org/image/300px/svg_to_png/73/rejon_Hammer.png'      
+            'imageUrl': 'https://openclipart.org/image/300px/svg_to_png/73/rejon_Hammer.png'
         }
     ];
 
