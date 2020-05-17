@@ -46,7 +46,7 @@ export class ProductListComponent implements OnInit {
 
   ngOnInit(): void {
     console.log('On Init!');
-    this.products = this.productService.getProducts();
+    // this.products = this.productService.getProducts();
     this.filteredProducts = this.products;
   }
 }
