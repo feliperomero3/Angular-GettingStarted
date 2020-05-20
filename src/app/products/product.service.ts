@@ -23,7 +23,7 @@ export class ProductService {
           errorMessage = `An error ocurred: ${errorResponseMessage}`;
         } else {
           errorMessage =
-            `Server retured code: ${errorResponse.status}, error message is: ${errorResponseMessage}`;
+            `Server returned code: ${errorResponse.status}, error message is: ${errorResponseMessage}`;
         }
         console.error(errorMessage);
         throw new Error(errorMessage);
