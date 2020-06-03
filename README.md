@@ -4,7 +4,7 @@ Coding along with [Angular: Getting Started][angular-course] by Deborah Kurata a
 
 [Starter project][starter-project] provided by Deborah Kurata hosted at GitHub.
 
-**NOTE**: this particular codebase has some minor differences with the course version.
+**NOTE**: this particular code base has some minor differences with the course version.
 
 ## Build
 
