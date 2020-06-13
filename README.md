@@ -1,6 +1,7 @@
 # Angular Getting Started
 
 ![Node.js CI][nodejs-ci]
+[![Coverage Status][coveralls-badge]][coveralls]
 
 Coding along with [Angular: Getting Started][angular-course] by Deborah Kurata at Pluralsight.
 
@@ -19,3 +20,5 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app w
 [angular-course]: https://www.pluralsight.com/courses/angular-2-getting-started-update
 [starter-project]: https://github.com/DeborahK/Angular-GettingStarted
 [nodejs-ci]: https://github.com/feliperomero3/Angular-GettingStarted/workflows/Node.js%20CI/badge.svg
+[coveralls]: https://coveralls.io/github/feliperomero3/Angular-GettingStarted?branch=master
+[coveralls-badge]: https://coveralls.io/repos/github/feliperomero3/Angular-GettingStarted/badge.svg?branch=master
