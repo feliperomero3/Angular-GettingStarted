@@ -28,3 +28,8 @@ jobs:
     - run: npm run lint
     - run: npm run build
     - run: npm run test
+
+    - name: Coveralls
+      uses: coverallsapp/github-action@v1.1.0
+      with:
+        github-token: ${{ secrets.github_token }}
