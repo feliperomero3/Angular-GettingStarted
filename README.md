@@ -18,6 +18,8 @@ Run `ng build` to build the project. The build artifacts will be stored in the `
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.9.
+
 [angular-course]: https://www.pluralsight.com/courses/angular-2-getting-started-update
 [starter-project]: https://github.com/DeborahK/Angular-GettingStarted
 [nodejs-ci]: https://github.com/feliperomero3/Angular-GettingStarted/actions?query=workflow%3A%22Node.js+CI%22
