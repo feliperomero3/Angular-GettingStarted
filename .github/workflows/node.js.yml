@@ -12,6 +12,7 @@ jobs:
     runs-on: ubuntu-latest
     env:
       NODE_VERSION: '12.x'
+      SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
     steps:
     - name: Checkout repository
       uses: actions/checkout@v2
@@ -39,3 +40,5 @@ jobs:
         github-token: ${{ secrets.GITHUB_TOKEN }}
         path-to-lcov: coverage/lcov.info
         coveralls-endpoint: https://coveralls.io/
+    - name: SonarCloud
+      uses: SonarSource/sonarcloud-github-action@v1.3
