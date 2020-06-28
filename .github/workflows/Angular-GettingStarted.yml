@@ -66,3 +66,4 @@ jobs:
         run: pwd
       - name: Deploy to Firebase
         run: firebase deploy --only hosting
+        working-directory: dist/APM
