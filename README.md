@@ -8,6 +8,8 @@ Coding along with [Angular: Getting Started][angular-course] by Deborah Kurata a
 
 [Starter project][starter-project] provided by Deborah Kurata hosted at GitHub.
 
+Demo: <https://angular-getting-started-apm.firebaseapp.com>
+
 **NOTE**: this particular code base has some minor differences with the course version.
 
 ## Build
