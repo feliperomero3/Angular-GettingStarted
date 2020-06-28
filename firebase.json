@@ -1,5 +1,8 @@
 {
   "hosting": {
-    "public": "dist/APM"
+    "public": "dist/APM",
+    "ignore": [
+      "firebase.json"
+    ]
   }
 }
