@@ -21,7 +21,12 @@
             "assets": [
               "src/favicon.ico",
               "src/assets",
-              "src/api"
+              "src/api",
+              {
+                "glob": "firebase.json",
+                "input": "./",
+                "output": "/"
+              }
             ],
             "styles": [
               "src/styles.css"
