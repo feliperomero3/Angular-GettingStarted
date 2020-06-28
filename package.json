@@ -7,7 +7,9 @@
     "build": "ng build",
     "test": "ng test --watch=false --browsers=ChromeHeadless --code-coverage",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "fbserve": "firebase serve --only hosting",
+    "fbdeploy": "firebase deploy --only hosting"
   },
   "private": true,
   "dependencies": {
