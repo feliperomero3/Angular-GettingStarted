@@ -43,3 +43,20 @@ jobs:
           coveralls-endpoint: https://coveralls.io/
       - name: SonarCloud
         uses: SonarSource/sonarcloud-github-action@v1.3
+
+  deploy:
+    name: Deploy
+    needs: build
+    runs-on: ubuntu-latest
+    env:
+      FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
+    steps:
+      - name: Download build artifacts
+        uses: actions/download-artifact@v1
+        with:
+          name: dist
+          path: dist
+      - name: Install firebase
+        run: sudo npm install -g firebase-tools
+      - name: Deploy to Firebase
+        run: firebase deploy --only hosting
