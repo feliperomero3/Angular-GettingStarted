@@ -1,4 +1,4 @@
-name: Node.js CI
+name: Angular-GettingStarted CI
 
 on:
   push:
@@ -17,7 +17,7 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
-      - name: Use Node.js ${{ env.NODE_VERSION }}
+      - name: Use Node ${{ env.NODE_VERSION }}
         uses: actions/setup-node@v1
         with:
           node-version: ${{ env.NODE_VERSION }}
