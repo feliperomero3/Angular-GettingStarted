@@ -15,31 +15,31 @@ jobs:
       SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     steps:
-    - name: Checkout repository
-      uses: actions/checkout@v2
-    - name: Use Node.js ${{ env.NODE_VERSION }}
-      uses: actions/setup-node@v1
-      with:
-        node-version: ${{ env.NODE_VERSION }}
-    - run: npm ci
-    - run: npm run lint
-    - run: npm run build
-    - run: npm run test
-    - name: Publish build artifacts
-      uses: actions/upload-artifact@v1
-      with:
-        name: dist
-        path: dist
-    - name: Publish code coverage results
-      uses: actions/upload-artifact@v1
-      with:
-        name: coverage
-        path: coverage
-    - name: Coveralls
-      uses: coverallsapp/github-action@v1.1.0
-      with:
-        github-token: ${{ env.GITHUB_TOKEN }}
-        path-to-lcov: coverage/lcov.info
-        coveralls-endpoint: https://coveralls.io/
-    - name: SonarCloud
-      uses: SonarSource/sonarcloud-github-action@v1.3
+      - name: Checkout repository
+        uses: actions/checkout@v2
+      - name: Use Node.js ${{ env.NODE_VERSION }}
+        uses: actions/setup-node@v1
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+      - run: npm ci
+      - run: npm run lint
+      - run: npm run build
+      - run: npm run test
+      - name: Publish build artifacts
+        uses: actions/upload-artifact@v1
+        with:
+          name: dist
+          path: dist
+      - name: Publish code coverage results
+        uses: actions/upload-artifact@v1
+        with:
+          name: coverage
+          path: coverage
+      - name: Coveralls
+        uses: coverallsapp/github-action@v1.1.0
+        with:
+          github-token: ${{ env.GITHUB_TOKEN }}
+          path-to-lcov: coverage/lcov.info
+          coveralls-endpoint: https://coveralls.io/
+      - name: SonarCloud
+        uses: SonarSource/sonarcloud-github-action@v1.3
