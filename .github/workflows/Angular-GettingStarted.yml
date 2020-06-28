@@ -58,12 +58,6 @@ jobs:
           path: dist
       - name: Install firebase
         run: sudo npm install -g firebase-tools
-      - name: Display the current directory
-        run: pwd
-      - name: Change to project root directory
-        run: cd dist/APM
-      - name: Display the current directory
-        run: pwd
       - name: Deploy to Firebase
-        run: firebase deploy --only hosting
+        run: firebase deploy --project angular-getting-started-apm --only hosting
         working-directory: dist/APM
