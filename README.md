@@ -24,8 +24,8 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 [angular-course]: https://www.pluralsight.com/courses/angular-2-getting-started-update
 [starter-project]: https://github.com/DeborahK/Angular-GettingStarted
-[nodejs-ci]: https://github.com/feliperomero3/Angular-GettingStarted/actions?query=workflow%3A%22Node.js+CI%22
-[nodejs-ci-badge]: https://github.com/feliperomero3/Angular-GettingStarted/workflows/Node.js%20CI/badge.svg
+[nodejs-ci]: https://github.com/feliperomero3/Angular-GettingStarted/actions?query=workflow%3A%22Angular-GettingStarted%20CI%22
+[nodejs-ci-badge]: https://github.com/feliperomero3/Angular-GettingStarted/workflows/Angular-GettingStarted%20CI/badge.svg
 [coveralls]: https://coveralls.io/github/feliperomero3/Angular-GettingStarted?branch=master
 [coveralls-badge]: https://coveralls.io/repos/github/feliperomero3/Angular-GettingStarted/badge.svg?branch=master
 [quality-gate-badge]: https://sonarcloud.io/api/project_badges/measure?project=feliperomero3_Angular-GettingStarted&metric=alert_status
