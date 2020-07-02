@@ -56,10 +56,8 @@ jobs:
         with:
           name: dist
           path: dist
-      - name: Adjust permissions for node_modules directory
-        run: sudo chown -R $(whoami) /usr/local/lib/node_modules
       - name: Install firebase
-        run: npm install -g firebase-tools
+        run: sudo npm install -g firebase-tools
       - name: Deploy to Firebase
         run: firebase deploy --public . --project angular-getting-started-apm --only hosting
         working-directory: dist/APM
