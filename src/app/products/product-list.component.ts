@@ -13,6 +13,10 @@ export class ProductListComponent implements OnInit {
   showImage = false;
   private _listFilter: string;
   errorMessage: any;
+  filteredProducts: IProduct[];
+  products: IProduct[];
+
+  constructor(private productService: ProductService) { }
 
   get listFilter(): string {
     return this._listFilter;
@@ -21,13 +25,6 @@ export class ProductListComponent implements OnInit {
   set listFilter(value: string) {
     this._listFilter = value;
     this.filteredProducts = this.listFilter ? this.performFilter(this.listFilter) : this.products;
-  }
-
-  filteredProducts: IProduct[];
-  products: IProduct[];
-
-  constructor(private productService: ProductService) {
-
   }
 
   onRatingClicked(message: string): void {
