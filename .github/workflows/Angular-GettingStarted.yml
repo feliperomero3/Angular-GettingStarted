@@ -17,6 +17,8 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
       - name: Use Node ${{ env.NODE_VERSION }}
         uses: actions/setup-node@v1
         with:
