@@ -12,7 +12,6 @@ jobs:
     runs-on: ubuntu-latest
     env:
       SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
-      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
@@ -39,6 +38,8 @@ jobs:
           name: coverage
           path: coverage
       - name: Coveralls
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         uses: coverallsapp/github-action@v1.1.0
         with:
           github-token: ${{ env.GITHUB_TOKEN }}
