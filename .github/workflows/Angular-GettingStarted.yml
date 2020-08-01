@@ -10,8 +10,6 @@ jobs:
   build:
     name: Build
     runs-on: ubuntu-latest
-    env:
-      SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
@@ -48,6 +46,9 @@ jobs:
       - name: Replace SF directories in coverage/lcov.info
         run: sed -i 's+/home/runner/work/Angular-GettingStarted/Angular-GettingStarted+/github/workspace+g' coverage/lcov.info
       - name: SonarCloud
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
         uses: SonarSource/sonarcloud-github-action@v1.3
 
   deploy:
