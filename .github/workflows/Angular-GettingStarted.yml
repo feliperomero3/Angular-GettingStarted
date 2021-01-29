@@ -35,14 +35,6 @@ jobs:
         with:
           name: coverage
           path: coverage
-      - name: Coveralls
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        uses: coverallsapp/github-action@v1.1.0
-        with:
-          github-token: ${{ env.GITHUB_TOKEN }}
-          path-to-lcov: coverage/lcov.info
-          coveralls-endpoint: https://coveralls.io/
       - name: Replace SF directories in coverage/lcov.info
         run: sed -i 's+/home/runner/work/Angular-GettingStarted/Angular-GettingStarted+/github/workspace+g' coverage/lcov.info
       - name: SonarCloud
