@@ -6,9 +6,7 @@
 
 Coding along with [Angular: Getting Started][angular-course] by Deborah Kurata at Pluralsight.
 
-[Starter project][starter-project] provided by Deborah Kurata hosted at GitHub.
-
-Demo: <https://angular-getting-started-apm.firebaseapp.com>
+**DEMO**: <https://angular-getting-started-apm.firebaseapp.com>
 
 **NOTE**: this particular code base has some minor differences with the course version.
 
@@ -18,7 +16,7 @@ Run `ng build` to build the project. The build artifacts will be stored in the `
 
 ## Run
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`.
 
 [angular-course]: https://www.pluralsight.com/courses/angular-2-getting-started-update
 [starter-project]: https://github.com/DeborahK/Angular-GettingStarted
